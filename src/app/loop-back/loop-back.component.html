@@ -1,0 +1,7 @@
+<input #box (keyup)="0">
+{{box.value}}
+<!--
+  Esto no funcionará en absoluto a menos que se vincule a un evento .
+
+Angular actualiza los enlaces (y por lo tanto la pantalla) sólo si la aplicación hace algo en respuesta a eventos asíncronos, como pulsaciones de teclas. Este ejemplo de código vincula el keyupevento al número 0, la instrucción de plantilla más corta posible. Mientras que la declaración no hace nada útil, satisface el requisito de Angular para que Angular actualice la pantalla.
+-->

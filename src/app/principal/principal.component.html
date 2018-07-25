@@ -1,0 +1,44 @@
+<div class="container-fluid">
+<a href="#clickMe">Ir a Click Me</a>
+<br>
+<a href="#keyup">Ir al método keyup</a>
+<br>
+<a href="#referencia">Variables por referencia</a>
+<br>
+<a href="#referencia2">Variables por referencia - Version 2</a>
+<br>
+<a href="#referencia3">Variables por referencia - Version 3</a>
+<br>
+<a href="#referencia4">Variables por referencia - Version 4</a>
+<hr />
+
+<h1>Metodo Click ME</h1>
+<div id="clickMe">
+  <click-me></click-me>
+</div>
+<br>
+<h1>Obtener la entrada del usuario desde el objeto $ event</h1>
+<div id="keyup">
+  <keyup></keyup>
+</div>
+<h1> Obtener entrada de usuario desde una variable de referencia de plantilla</h1>
+<div id="referencia">
+  <loop-back></loop-back>
+</div>
+<h1> Obtener entrada de usuario desde una variable de referencia de plantilla - Versión 2</h1>
+<div id="referencia2">
+  <loop-back-v2></loop-back-v2>
+</div>
+<h1> Filtrado de sucesos clave (conkey.enter)</h1>
+<p>El (keyup)manejador de eventos escucha cada pulsación de tecla . A veces sólo es importante la tecla Enter , ya que indica que el usuario ha terminado de escribir. Una manera de reducir el ruido sería examinar cada uno $event.keyCodey tomar medidas sólo cuando la tecla es Enter .
+
+Hay una manera más fácil: ligar al keyup.enterpseudo-evento de Angular . Entonces Angular llama al manejador de eventos sólo cuando el usuario presiona Enter .</p>
+<div id="referencia3">
+  <loop-back-v3></loop-back-v3>
+</div>
+
+<h1>On BLUR</h1>
+<div id="referencia4">
+  <loop-back-v4></loop-back-v4>
+</div>
+</div>
