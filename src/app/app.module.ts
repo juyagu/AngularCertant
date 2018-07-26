@@ -16,6 +16,7 @@ import { PrincipalComponent } from './principal/principal.component';
 import { FormulariosPrincipalComponent } from './formularios-principal/formularios-principal.component';
 import { FormPeliculaComponent } from './form-pelicula/form-pelicula.component';
 import { Clase2Module } from './clase2/clase2.module';
+import { Clase4Module } from './clase4/clase4.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { Clase2Module } from './clase2/clase2.module';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    Clase2Module
+    Clase2Module,
+    Clase4Module
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,8 +9,9 @@ export class KeyupComponent {
   values = "";
 
   /*onKey(event : any){
+    console.log(event);
     this.values += event.target.value + ' | ';
-  }*/
+  } */
 
   /* https://developer.mozilla.org/en-US/docs/Web/API/E */
   onKey(event: KeyboardEvent){

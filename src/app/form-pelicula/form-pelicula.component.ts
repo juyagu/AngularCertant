@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pelicula } from '../pelicula';
 
 @Component({
-  selector: 'form-pelicula',
+  selector: 'form-pelicula-clase4',
   templateUrl: './form-pelicula.component.html',
   styleUrls: ['./form-pelicula.component.css']
 })

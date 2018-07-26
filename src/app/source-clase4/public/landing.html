@@ -1,0 +1,16 @@
+<h1>Esta es la página del landing</h1>
+<p appResaltar>Este es un parrafo</p>
+<p appResaltarDinamico> Este es un párrafo con directiva dinamica</p>
+<hr />
+<h1>My First Attribute Directive</h1>
+
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appResaltarInput]="color">Highlight me!</p>
+<p [appResaltarInput]="color" defaultColor="violet">
+    Highlight me too!
+</p>
