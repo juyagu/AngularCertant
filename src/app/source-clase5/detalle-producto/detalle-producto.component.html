@@ -1,0 +1,29 @@
+<h1>Detalle de producto</h1>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Nombre</label>
+      <input type="text" class="form-control" [(ngModel)]="productoSeleccionado.prd_nombre" name="nombre">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Descripcion</label>
+      <input type="text" class="form-control" [(ngModel)]="productoSeleccionado.prd_descripcion" name="nombre">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="">Precio</label>
+    <input type="text" class="form-control" [(ngModel)]="productoSeleccionado.prd_precio" name="nombre">
+  </div>
+</div>
+<hr>
+<button class="btn btn-success" id="bnt-modificar" (click)="modificarProducto()">Modificar</button>
+
+<div [hidden]="!modificado">
+  <div class="alert alert-primary" role="alert">
+    Producto Modificado correctamente
+  </div>
+</div>

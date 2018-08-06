@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me/click-me.component';
@@ -17,6 +18,7 @@ import { FormulariosPrincipalComponent } from './formularios-principal/formulari
 import { FormPeliculaComponent } from './form-pelicula/form-pelicula.component';
 import { Clase2Module } from './clase2/clase2.module';
 import { Clase4Module } from './clase4/clase4.module';
+import { Clase5Module } from './source-clase5/clase5/clase5.module';
 
 @NgModule({
   declarations: [
@@ -30,15 +32,17 @@ import { Clase4Module } from './clase4/clase4.module';
     MenuComponent,
     PrincipalComponent,
     FormulariosPrincipalComponent,
-    FormPeliculaComponent
+    FormPeliculaComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    HttpClientModule,
     Clase2Module,
-    Clase4Module
+    Clase4Module,
+    Clase5Module
   ],
   providers: [],
   bootstrap: [AppComponent]

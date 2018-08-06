@@ -18,7 +18,7 @@ import { HomeComponent } from '../home/home.component';
     DetalleAlumnoComponent,
     HomeComponent
   ],
-  exports:[
+  exports: [
     TituloComponent,
     TablaAlumnosComponent,
     TituloTablaComponent,

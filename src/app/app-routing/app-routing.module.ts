@@ -7,15 +7,17 @@ import { FormulariosPrincipalComponent } from '../formularios-principal/formular
 import {HomeComponent} from '../home/home.component';
 import { AppComponent } from '../source-clase4/app.component';
 import { FormPeliculaComponent } from '../source-clase4/form-pelicula/form-pelicula.component';
+import { PrincipalClase5Component } from '../source-clase5/principal/principal.component';
 
-const routes : Routes = [
-  { path: '', redirectTo : '/principal',pathMatch:'full' },
+const routes: Routes = [
+  { path: '', redirectTo : '/principal', pathMatch: 'full' },
   { path: 'principal', component: PrincipalComponent},
-  { path:'formularios-principal', component: FormulariosPrincipalComponent},
-  { path:'clase2',component:HomeComponent},
-  { path:'clase4',component:AppComponent},
-  { path:'frmPeliClase4',component:FormPeliculaComponent},
-]
+  { path: 'formularios-principal', component: FormulariosPrincipalComponent},
+  { path: 'clase2', component: HomeComponent},
+  { path: 'clase4', component: AppComponent},
+  { path: 'frmPeliClase4', component: FormPeliculaComponent},
+  { path: 'indexClase5', component: PrincipalClase5Component},
+];
 
 @NgModule({
   imports: [

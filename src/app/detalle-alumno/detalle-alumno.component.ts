@@ -9,12 +9,8 @@ import { Alumno } from '../entities/alumno';
 export class DetalleAlumnoComponent implements OnInit {
 
   @Input()
-  alumno:Alumno;
-  
-  
-  constructor() {
-   
-   }
+  alumno: Alumno;
+  constructor() {}
 
   ngOnInit() {
     this.alumno.apodo = 'PEPE';

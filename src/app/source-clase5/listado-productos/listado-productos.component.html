@@ -1,0 +1,25 @@
+<h1>Listado de Productos</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos"  (click)="getDetalle(producto.prd_id)">
+      <td>{{producto.prd_id}}</td>
+      <td>{{producto.prd_nombre}}</td>
+      <td>{{producto.prd_descripcion}}</td>
+      <td>{{producto.prd_precio}}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<div *ngIf="productoSeleccionado">
+  <app-detalle-producto [productoSeleccionado]="productoSeleccionado"></app-detalle-producto>
+</div>
+
